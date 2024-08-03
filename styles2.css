@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.login-form h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.facebook-button {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.apple-button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    color: #fff;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #555;
+}
+
+.divider span {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.login-button {
+    background-color: #1db954;
+    color: #fff;
+}
+
+.forgot-link, .sign-up-link {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    color: #1db954;
+    text-decoration: none;
+}
+
+.forgot-link:hover, .sign-up-link:hover {
+    text-decoration: underline;
+}

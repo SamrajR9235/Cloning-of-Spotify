@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">
+                <img src="./images/Spotify Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#"><span class="fa fa-home"></span><span>Home</span></a></li>
+                <li><a href="#"><span class="fa fa-search"></span><span>Search</span></a></li>
+                <li><a href="#"><span class="fa fas fa-book"></span><span>Your Library</span></a></li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#"><span class="fa fa-plus-square"></span><span>Create Playlist</span></a></li>
+                <li><a href="#"><span class="fa fa-heart"></span><span>Liked Songs</span></a></li>
+            </ul>
+        </div>
+        <div class="policies">
+            <ul>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+                <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" data-url="about us.html">About us</a></li> 
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+                <button type="button" onclick="openNewPage()">Login</button>
+            </div>
+        </div>
+
+        <div class="spotify-playlists">
+            <h2>Tamil Playlist</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="./images/post1.jpeg" alt="GOAT(Greatest of all time)" />
+                    <div class="play" onclick="playSong('./songs/Hey Party Onnu Thodangattuma.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>GOAT(Greatest of all time)</h4>
+                    <p>Yuvan shankar raja</p>
+                </div>
+                <div class="item">
+                    <img src="./images/post2.jpeg" alt="Rayaan" />
+                    <div class="play" onclick="playSong('./songs/Adangaatha Asuran.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Rayaan</h4>
+                    <p>A.R.Rahman</p>
+                </div>
+                <div class="item">
+                    <img src="./images/post3.jpeg" alt="Indian 2" />
+                    <div class="play" onclick="playSong('./songs/Kadharalz (1).mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Indian 2</h4>
+                    <p>Anirudh Ravichander</p>
+                </div>
+                <div class="item">
+                    <img src="./images/post4.jpeg" alt="Aasa Kooda" />
+                    <div class="play" onclick="playSong('./songs/Aasa Kooda (1).mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Aasa Kooda</h4>
+                    <p>Sai Abhyankkar</p>
+                </div>
+            </div>
+        </div>
+        <div class="popular-music">
+            <h2>English playlist</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="./images/1.jpg" alt="Legion" />
+                    <div class="play" onclick="playSong('./songs/1.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Legion</h4>
+                    <p>Blasterjaxx</p>
+                </div>
+                <div class="item">
+                    <img src="./images/2.jpg" alt="Trap" />
+                    <div class="play" onclick="playSong('./songs/2.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Trap</h4>
+                    <p>Buzsquez</p>
+                </div><div class="item">
+                    <img src="./images/3.jpg" alt="They mad" />
+                    <div class="play" onclick="playSong('./songs/3.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>They mad</h4>
+                    <p>Lil 1 DTE</p>
+                </div>
+                <div class="item">
+                    <img src="./images/4.jpg" alt="Plug walk" />
+                    <div class="play" onclick="playSong('./songs/4.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Plug walk</h4>
+                    <p>Rick the kid</p>
+                </div>
+            </div>           
+        </div>
+        <div class="popular-albums">
+            <h2>Phonk playlist</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="./images/1.1.jpg" alt="Murder in my mind" />
+                    <div class="play" onclick="playSong('./songs/1.1.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Murder in my mind</h4>
+                    <p>Kordhell</p>
+                </div>
+                <div class="item">
+                    <img src="./images/2.1.jpg" alt="Rave" />
+                    <div class="play" onclick="playSong('./songs/2.1.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Rave</h4>
+                    <p>Dxrk</p>
+                </div> <div class="item">
+                    <img src="./images/3.1.jpg" alt="Life of rio" />
+                    <div class="play" onclick="playSong('./songs/3.1.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Life of rio</h4>
+                    <p>Slowboy, NUEKI, Crazy Mano, TOLCHONOV</p>
+                </div>
+                <div class="item">
+                    <img src="./images/4.1.jpeg" alt="Mexican phonk eki" />
+                    <div class="play" onclick="playSong('./songs/4.1.mp3')">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Mexican phonk eki</h4>
+                    <p>NUEKI</p>
+                </div> 
+            </div>
+        </div>
+        <div class="preview">
+            <div class="text">
+                <h3>Preview of Spotify</h3>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <div class="button">
+                <button type="button">Sign up free</button>
+            </div>
+        </div>
+
+        <audio id="audioPlayer" controls style="width: 100%;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
